@@ -1,0 +1,633 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date         : Thu Jun 11 18:48:24 2026
+| Host         : sam-Dell-G15-5511 running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_methodology -file main_methodology_drc_routed.rpt -pb main_methodology_drc_routed.pb -rpx main_methodology_drc_routed.rpx
+| Design       : main
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_main
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 119
++-----------+----------+--------------------------------------------+--------+
+| Rule      | Severity | Description                                | Checks |
++-----------+----------+--------------------------------------------+--------+
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal | 16     |
+| SYNTH-10  | Warning  | Wide multiplier                            | 4      |
+| SYNTH-15  | Warning  | Byte wide write enable not inferred        | 96     |
+| TIMING-18 | Warning  | Missing input or output delay              | 3      |
++-----------+----------+--------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at _main_i0/Datapath_i/fu_main_33671_42561/out1 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at _main_i0/Datapath_i/fu_main_33671_42561/out1__0 of size 16x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at _main_i0/Datapath_i/fu_main_33671_42561/out1__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at _main_i0/Datapath_i/fu_main_33671_42561/out1__2 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-15#1 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#2 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#3 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#4 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#5 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#6 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#7 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#8 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#9 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#10 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#11 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#12 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#13 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#14 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#15 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#16 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#17 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#18 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#19 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#20 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#21 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#22 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#23 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#24 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#25 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#26 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#27 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#28 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#29 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#30 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#31 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#32 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#33 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#34 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#35 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#36 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#37 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#38 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#39 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#40 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#41 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#42 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#43 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#44 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#45 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#46 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#47 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#48 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#49 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#50 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#51 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#52 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#53 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#54 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#55 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#56 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#57 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#58 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#59 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#60 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#61 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#62 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#63 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#64 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#65 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#66 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#67 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#68 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#69 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#70 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#71 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#72 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#73 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#74 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#75 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#76 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#77 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#78 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#79 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#80 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#81 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#82 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#83 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#84 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_2_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#85 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_0 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#86 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_1 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#87 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_10 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#88 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_11 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#89 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_2 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#90 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_3 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#91 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_4 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#92 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_5 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#93 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_6 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#94 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_7 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#95 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_8 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+SYNTH-15#96 Warning
+Byte wide write enable not inferred  
+Byte wide write enable (BWWE) is not inferred for Block RAM _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_3_bram_9 because address width (16) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired..
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on start_port relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on done_port relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+

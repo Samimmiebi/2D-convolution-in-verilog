@@ -1,0 +1,422 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date              : Thu Jun 11 18:49:06 2026
+| Host              : sam-Dell-G15-5511 running 64-bit Ubuntu 24.04.4 LTS
+| Command           : report_timing_summary -file ./vivado_project/post_impl_timing_summary.txt
+| Design            : main
+| Device            : xczu3eg-sbva484
+| Speed File        : -1  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                                 Violations  
+---------  --------  ------------------------------------------  ----------  
+SYNTH-6    Warning   Timing of a RAM block might be sub-optimal  16          
+SYNTH-10   Warning   Wide multiplier                             4           
+SYNTH-15   Warning   Byte wide write enable not inferred         96          
+TIMING-18  Warning   Missing input or output delay               3           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (2)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.376        0.000                      0                 9619        0.026        0.000                      0                 9619        4.457        0.000                       0                  3103  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+clk    {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk                 1.376        0.000                      0                 9619        0.026        0.000                      0                 9619        4.457        0.000                       0                  3103  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk
+  To Clock:  clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.376ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.026ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.457ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.376ns  (required time - arrival time)
+  Source:                 _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_0/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_10/reg_out1_reg[4]/CE
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        8.179ns  (logic 4.241ns (51.854%)  route 3.938ns (48.146%))
+  Logic Levels:           20  (CARRY8=4 LUT2=1 LUT3=1 LUT5=2 LUT6=5 RAMB36E2=7)
+  Clock Path Skew:        -0.367ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.743ns = ( 12.743 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.534ns
+    Clock Pessimism Removal (CPR):    0.424ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.648ns (routing 1.205ns, distribution 1.443ns)
+  Clock Net Delay (Destination): 2.169ns (routing 1.098ns, distribution 1.071ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    A4                                                0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock_IBUF_inst/I
+    A4                   INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.515     0.515 r  clock_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.515    clock_IBUF_inst/OUT
+    A4                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.515 r  clock_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.343     0.858    clock_IBUF
+    BUFGCE_X0Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     0.886 r  clock_IBUF_BUFG_inst/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3159, routed)        2.648     3.534    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/clock_IBUF_BUFG
+    RAMB36_X5Y4          RAMB36E2                                     r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_0/CLKBWRCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X5Y4          RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKBWRCLK_CASDOUTB[1])
+                                                      1.230     4.764 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_0/CASDOUTB[1]
+                         net (fo=1, routed)           0.028     4.792    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_0_n_66
+    RAMB36_X5Y5          RAMB36E2 (Prop_RAMB36E2_RAMB36_CASDINB[1]_CASDOUTB[1])
+                                                      0.220     5.012 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_1/CASDOUTB[1]
+                         net (fo=1, routed)           0.028     5.040    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_1_n_66
+    RAMB36_X5Y6          RAMB36E2 (Prop_RAMB36E2_RAMB36_CASDINB[1]_CASDOUTB[1])
+                                                      0.220     5.260 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_2/CASDOUTB[1]
+                         net (fo=1, routed)           0.028     5.288    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_2_n_66
+    RAMB36_X5Y7          RAMB36E2 (Prop_RAMB36E2_RAMB36_CASDINB[1]_CASDOUTB[1])
+                                                      0.220     5.508 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_3/CASDOUTB[1]
+                         net (fo=1, routed)           0.028     5.536    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_3_n_66
+    RAMB36_X5Y8          RAMB36E2 (Prop_RAMB36E2_RAMB36_CASDINB[1]_CASDOUTB[1])
+                                                      0.220     5.756 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_4/CASDOUTB[1]
+                         net (fo=1, routed)           0.028     5.784    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_4_n_66
+    RAMB36_X5Y9          RAMB36E2 (Prop_RAMB36E2_RAMB36_CASDINB[1]_CASDOUTB[1])
+                                                      0.220     6.004 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_5/CASDOUTB[1]
+                         net (fo=1, routed)           0.028     6.032    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_5_n_66
+    RAMB36_X5Y10         RAMB36E2 (Prop_RAMB36E2_RAMB36_CASDINB[1]_CASDOUTB[1])
+                                                      0.220     6.252 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_6/CASDOUTB[1]
+                         net (fo=1, routed)           0.028     6.280    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_6_n_66
+    RAMB36_X5Y11         RAMB36E2 (Prop_RAMB36E2_RAMB36_CASDINB[1]_DOUTBDOUT[1])
+                                                      0.120     6.400 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_7/DOUTBDOUT[1]
+                         net (fo=2, routed)           0.753     7.153    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_1_bram_7_n_130
+    SLICE_X36Y75         LUT3 (Prop_A5LUT_SLICEL_I2_O)
+                                                      0.199     7.352 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/SECOND_MEMORY.BRAM_MEMORY_NN_instance_b/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/out1_i_99__0/O
+                         net (fo=1, routed)           0.243     7.595    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/dout_b[41]
+    SLICE_X36Y75         LUT5 (Prop_C5LUT_SLICEL_I4_O)
+                                                      0.168     7.763 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/out1_i_74__0/O
+                         net (fo=2, routed)           0.512     8.274    _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/ADDRESS_DECODING_LOGIC_NN_instance/reg_out1_reg[9]
+    SLICE_X24Y74         LUT6 (Prop_H6LUT_SLICEM_I2_O)
+                                                      0.182     8.456 r  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/ADDRESS_DECODING_LOGIC_NN_instance/out1_i_40__1/O
+                         net (fo=1, routed)           0.231     8.687    _main_i0/Datapath_i/bus_mergerSout_Rdata_ram6_/sig_in_vector_bus_mergerSout_Rdata_ram6_1[17]
+    SLICE_X25Y73         LUT5 (Prop_C6LUT_SLICEL_I4_O)
+                                                      0.063     8.750 r  _main_i0/Datapath_i/bus_mergerSout_Rdata_ram6_/out1_i_8__0/O
+                         net (fo=11, routed)          0.600     9.350    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_0/M_Rdata_ram_INT[9]
+    SLICE_X34Y86         LUT2 (Prop_B6LUT_SLICEM_I1_O)
+                                                      0.100     9.450 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_0/out10_carry__0_i_7__5/O
+                         net (fo=1, routed)           0.018     9.468    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_824/reg_out1_reg[18][1]
+    SLICE_X34Y86         CARRY8 (Prop_CARRY8_SLICEM_S[1]_CO[7])
+                                                      0.238     9.706 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_824/out10_carry__0/CO[7]
+                         net (fo=1, routed)           0.028     9.734    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_824/out10_carry__0_n_0
+    SLICE_X34Y87         CARRY8 (Prop_CARRY8_SLICEM_CI_O[2])
+                                                      0.086     9.820 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_824/out10_carry__1/O[2]
+                         net (fo=1, routed)           0.214    10.034    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_824/out_ui_pointer_plus_expr_FU_32_32_32_51_i0_fu___internal_free_737_824__0[21]
+    SLICE_X33Y86         LUT6 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.149    10.183 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_824/out1_carry_i_1__8/O
+                         net (fo=1, routed)           0.011    10.194    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_34748/S[7]
+    SLICE_X33Y86         CARRY8 (Prop_CARRY8_SLICEL_S[7]_CO[7])
+                                                      0.148    10.342 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_34748/out1_carry/CO[7]
+                         net (fo=1, routed)           0.028    10.370    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_34748/out1_carry_n_0
+    SLICE_X33Y87         CARRY8 (Prop_CARRY8_SLICEL_CI_CO[2])
+                                                      0.073    10.443 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/fu___internal_free_737_34748/out1_carry__0/CO[2]
+                         net (fo=5, routed)           0.309    10.753    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Controller_i/reg_out1_reg[0]_0[0]
+    SLICE_X31Y89         LUT6 (Prop_E6LUT_SLICEM_I5_O)
+                                                      0.063    10.816 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Controller_i/reg_out1[31]_i_4__6/O
+                         net (fo=1, routed)           0.102    10.918    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Controller_i/reg_out1[31]_i_4__6_n_0
+    SLICE_X31Y89         LUT6 (Prop_F6LUT_SLICEM_I0_O)
+                                                      0.038    10.956 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Controller_i/reg_out1[31]_i_2__7/O
+                         net (fo=1, routed)           0.050    11.006    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Controller_i/reg_out1[31]_i_2__7_n_0
+    SLICE_X31Y89         LUT6 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.064    11.070 r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Controller_i/reg_out1[31]_i_1__8/O
+                         net (fo=32, routed)          0.643    11.712    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_10/reg_out1_reg[0]_0[0]
+    SLICE_X36Y81         FDRE                                         r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_10/reg_out1_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+    A4                                                0.000    10.000 r  clock (IN)
+                         net (fo=0)                   0.000    10.000    clock_IBUF_inst/I
+    A4                   INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.248    10.248 r  clock_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000    10.248    clock_IBUF_inst/OUT
+    A4                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    10.248 r  clock_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.302    10.550    clock_IBUF
+    BUFGCE_X0Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    10.574 r  clock_IBUF_BUFG_inst/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3159, routed)        2.169    12.743    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_10/clock_IBUF_BUFG
+    SLICE_X36Y81         FDRE                                         r  _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_10/reg_out1_reg[4]/C
+                         clock pessimism              0.424    13.167    
+                         clock uncertainty           -0.035    13.131    
+    SLICE_X36Y81         FDRE (Setup_EFF_SLICEL_C_CE)
+                                                     -0.043    13.088    _main_i0/Datapath_i/__internal_free_instance/__internal_free_i/Datapath_i/reg_10/reg_out1_reg[4]
+  -------------------------------------------------------------------
+                         required time                         13.088    
+                         arrival time                         -11.712    
+  -------------------------------------------------------------------
+                         slack                                  1.376    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.026ns  (arrival time - required time)
+  Source:                 _main_i0/Datapath_i/reg_8/reg_out1_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            _main_i0/Datapath_i/reg_15/reg_out1_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
+  Data Path Delay:        0.079ns  (logic 0.039ns (49.309%)  route 0.040ns (50.691%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.006ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.860ns
+    Source Clock Delay      (SCD):    1.483ns
+    Clock Pessimism Removal (CPR):    0.370ns
+  Clock Net Delay (Source):      1.188ns (routing 0.614ns, distribution 0.574ns)
+  Clock Net Delay (Destination): 1.336ns (routing 0.682ns, distribution 0.654ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    A4                                                0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock_IBUF_inst/I
+    A4                   INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.123     0.123 r  clock_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.123    clock_IBUF_inst/OUT
+    A4                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.123 r  clock_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.156     0.279    clock_IBUF
+    BUFGCE_X0Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.017     0.296 r  clock_IBUF_BUFG_inst/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3159, routed)        1.188     1.483    _main_i0/Datapath_i/reg_8/clock_IBUF_BUFG
+    SLICE_X28Y108        FDRE                                         r  _main_i0/Datapath_i/reg_8/reg_out1_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y108        FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.039     1.522 r  _main_i0/Datapath_i/reg_8/reg_out1_reg[1]/Q
+                         net (fo=2, routed)           0.040     1.563    _main_i0/Datapath_i/reg_15/Q[1]
+    SLICE_X28Y108        FDRE                                         r  _main_i0/Datapath_i/reg_15/reg_out1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    A4                                                0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock_IBUF_inst/I
+    A4                   INBUF (Prop_INBUF_HPIOB_M_PAD_O)
+                                                      0.308     0.308 r  clock_IBUF_inst/INBUF_INST/O
+                         net (fo=1, routed)           0.000     0.308    clock_IBUF_inst/OUT
+    A4                   IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.308 r  clock_IBUF_inst/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.197     0.505    clock_IBUF
+    BUFGCE_X0Y48         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.019     0.524 r  clock_IBUF_BUFG_inst/O
+    X0Y1 (CLOCK_ROOT)    net (fo=3159, routed)        1.336     1.860    _main_i0/Datapath_i/reg_15/clock_IBUF_BUFG
+    SLICE_X28Y108        FDRE                                         r  _main_i0/Datapath_i/reg_15/reg_out1_reg[1]/C
+                         clock pessimism             -0.370     1.489    
+    SLICE_X28Y108        FDRE (Hold_HFF2_SLICEM_C_D)
+                                                      0.047     1.536    _main_i0/Datapath_i/reg_15/reg_out1_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.536    
+                         arrival time                           1.563    
+  -------------------------------------------------------------------
+                         slack                                  0.026    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clock }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.739         10.000      8.261      RAMB36_X0Y16  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_0/CLKARDCLK
+Low Pulse Width   Slow    RAMB36E2/CLKARDCLK  n/a            0.543         5.000       4.457      RAMB36_X0Y16  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_0/CLKARDCLK
+High Pulse Width  Slow    RAMB36E2/CLKARDCLK  n/a            0.543         5.000       4.457      RAMB36_X0Y16  _main_i0/Datapath_i/array_1020_0/ARRAY_1D_STD_BRAM_NN_instance/BRAM_MEMORY_NN_instance_a/TRUE_DUAL_PORT_BYTE_ENABLING_RAM_instance/L11_write_b[1].memory_reg_0_bram_0/CLKARDCLK
+
+
+

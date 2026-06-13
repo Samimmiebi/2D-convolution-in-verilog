@@ -1,0 +1,12 @@
+# Ignoring massive files, simulator outputs, and HLS build dirs
+bambu.AppImage
+squashfs-root/
+bambu
+HLS_output/
+*.mem
+*.vcd
+*.wdb
+*.jou
+*.log
+*.pb
+xsim.dir/
